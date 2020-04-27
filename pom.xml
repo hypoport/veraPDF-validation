@@ -40,11 +40,14 @@
   <description>veraPDF validation, feature extraction and metadata repair based on PDF parser.</description>
 
   <scm>
-    <url>https://github.com/veraPDF/veraPDF-valdation/</url>
-    <connection>scm:git:https://github.com/veraPDF/veraPDF-valdation.git</connection>
-    <developerConnection>scm:git:git@github.com:veraPDF/veraPDF-valdation.git</developerConnection>
+    <connection>scm:git:git@github.com:hypoport/veraPDF-validation.git</connection>
+    <developerConnection>scm:git:git@github.com:hypoport/veraPDF-validation.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
 
+
+    
+    
   <repositories>
     <repository>
       <snapshots>
@@ -79,6 +82,17 @@
     <verapdf.library.version>[1.17.0,1.18.0-RC)</verapdf.library.version>
   </properties>
 
+  <distributionManagement>
+    <snapshotRepository>
+      <id>pbu-nexus-snapshots</id>
+      <url>http://nexus-beta.hypoport.local/nexus/content/repositories/pbu-snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>pbu-nexus-releases</id>
+      <url>http://nexus-beta.hypoport.local/nexus/content/repositories/pbu-releases</url>
+    </repository>
+  </distributionManagement>
+    
   <dependencyManagement>
     <dependencies>
       <!-- veraPDF Project dependencies -->
